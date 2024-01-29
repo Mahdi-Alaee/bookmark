@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <header className="pt-12">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 flex justify-between items-center">
         {/* icon */}
         <svg
           className={`${isMenuOpen ? "relative z-50" : ""}`}
