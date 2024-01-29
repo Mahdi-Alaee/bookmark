@@ -6,3 +6,55 @@
     font-family: 'Rubik';
     src: url(/fonts/Rubik-Regular.ttf);
 }
+
+.burger-btn{
+    position: relative;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .top-line,
+  .middle-line,
+  .bottom-line{
+    position: absolute;
+    height: 3px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border-radius: 20px;
+    transition: all linear .2s;
+    opacity: 1;
+  }
+  
+  .top-line{
+    top: 0;
+  }
+  
+  .middle-line{
+    top: 8px;
+  }
+  
+  .bottom-line{
+    bottom: 1px;
+  }
+
+  .burger-btn--active{
+    @apply fixed z-50 right-8 top-12
+  }
+  
+  .burger-btn--active .top-line{
+    /* transform: rotate(45deg) translate(10px, 10px); */
+    transform: rotate(45deg) translate(7px, 2px);
+    background-color: #fff;
+  }
+  
+  .burger-btn--active .middle-line{
+    opacity: 0;
+  }
+  
+  .burger-btn--active .bottom-line{
+    /* transform: rotate(-45deg) translate(2px,-2px); */
+    transform: rotate(-45deg) translate(9px,-5px);
+    background-color: #fff;
+  }
