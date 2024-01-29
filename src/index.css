@@ -40,7 +40,8 @@
   }
 
   .burger-btn--active{
-    @apply fixed z-50 right-8 top-12
+    top: 52px;
+    @apply fixed z-50 right-7
   }
   
   .burger-btn--active .top-line{
