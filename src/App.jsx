@@ -1,3 +1,4 @@
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
 import HeroSection from "./components/HeroSection";
 import Header from "./components/header";
 
@@ -6,7 +7,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
-
+      <FeaturesSection />
 
 
       
