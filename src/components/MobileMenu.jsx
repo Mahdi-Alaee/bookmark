@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom";
 
 function MobileMenu({ isActive }) {
-    console.log(isActive);
-
   return ReactDOM.createPortal(
     <div
       className={`bg-veryDarkBlue bg-opacity-80 fixed top-0 bottom-0 left-0 right-0 
-        pt-24 px-6 ${isActive ? "z-40 opacity-90" : "-z-50 opacity-0"} md:hidden`}
+        pt-24 px-6 ${
+          isActive ? "z-40 opacity-90" : "-z-50 opacity-0"
+        } md:hidden`}
     >
       <ul className="flex flex-col w-full">
         {/* item 1 */}

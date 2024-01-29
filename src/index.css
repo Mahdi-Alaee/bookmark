@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Rubik';
-    src: url(/fonts/Rubik-Regular.ttf);
+    src: url(/fonts/Rubik-Regular.ttf) format(truetype);
 }
 
 .burger-btn{
@@ -60,7 +60,6 @@
     background-color: #fff;
   }
 
-  .bg-hero{
-    @apply hidden absolute right-0 bg-softBlue h-72 w-[36%] rounded-l-full
-     -z-10 -bottom-4 lg:block
+  .bg-section{
+    @apply hidden absolute bg-softBlue h-72 -z-10 lg:block
   }

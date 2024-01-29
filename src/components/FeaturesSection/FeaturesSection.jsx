@@ -1,8 +1,18 @@
+import { useState } from "react";
 import Feature from "./components/Feature";
+import { features, featuresMenus } from "../../js/data";
 
 function FeaturesSection() {
+  const [selectedFeature, setSelectedFeature] = useState(features[0]);
+
+  const featureMenuHandler = (e, id) => {
+    e.preventDefault();
+
+    setSelectedFeature(features.find((feature) => feature.id === id));
+  };
+
   return (
-    <section className="mt-20">
+    <section className="mt-20 relative">
       {/* container */}
       <div className="container mx-auto px-6 text-center">
         {/* title */}
@@ -16,30 +26,30 @@ function FeaturesSection() {
         </p>
 
         {/* menu */}
-        <ul className="flex flex-col mb-10 border-gray-300 md:flex-row md:gap-x-20 
-        md:border-b md:w-max md:mx-auto md:px-2">
-          {/* item 1 */}
-          <li className="text-gray-600 hover:text-softRed border-b border-gray-300 md:border-b-0">
-            <a className="border-b-4 border-softRed py-5 inline-block" href="#">
-              Simple Bookmarking
-            </a>
-          </li>
-          {/* item 2 */}
-          <li className="text-gray-600 hover:text-softRed border-b border-gray-300 md:border-b-0">
-            <a className="border-softRed py-5 inline-block" href="#">
-              Speedy Searching
-            </a>
-          </li>
-          {/* item 3 */}
-          <li className="text-gray-600 hover:text-softRed border-b border-gray-300 md:border-b-0">
-            <a className="border-softRed py-5 inline-block" href="#">
-              Easy Sharing
-            </a>
-          </li>
+        <ul
+          className="flex flex-col mb-10 border-gray-300 md:flex-row md:gap-x-20 
+        md:border-b md:w-max md:mx-auto md:px-2"
+        >
+          {featuresMenus.map((item) => (
+            <li
+              key={item.id}
+              className="text-gray-600 hover:text-softRed border-b border-gray-300 md:border-b-0"
+            >
+              <a
+                className={`border-softRed py-5 inline-block ${
+                  item.id === selectedFeature.id ? "border-b-4" : ""
+                }`}
+                href="#"
+                onClick={(e) => featureMenuHandler(e, item.id)}
+              >
+                {item.title}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* feature */}
-        <Feature />
+        <Feature {...selectedFeature} />
       </div>
     </section>
   );

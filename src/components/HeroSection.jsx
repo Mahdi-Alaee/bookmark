@@ -47,7 +47,7 @@ function HeroSection() {
             src="/images/illustration-hero.svg"
             alt="hero banner"
           />
-          <div className="bg-hero"></div>
+          <div className="bg-section right-0 -bottom-4 rounded-r-full w-[36%]"></div>
         {/* </div> */}
       </div>
     </section>
