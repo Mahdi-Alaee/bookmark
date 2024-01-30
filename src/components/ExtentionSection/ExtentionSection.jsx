@@ -16,8 +16,8 @@ function ExtentionSection() {
         {/* content */}
         <div className="grid grid-cols-1 gap-8 px-4 max-w-5xl md:grid-cols-3 md:px-0 md:-mx-5 lg:mx-auto">
             <ExtentionBox title='Add to Chrome' image='logo-chrome.svg' version='Minimum Version 62' />
-            <ExtentionBox className='mt-4 -mb-4' title='Add to Firefox' image='logo-firefox.svg' version='Minimum Version 55' />
-            <ExtentionBox className='mt-8 -mb-8' title='Add to Opera' image='logo-opera.svg' version='Minimum Version 46' />
+            <ExtentionBox className='md:mt-4 md:-mb-4' title='Add to Firefox' image='logo-firefox.svg' version='Minimum Version 55' />
+            <ExtentionBox className='md:mt-8 md:-mb-8' title='Add to Opera' image='logo-opera.svg' version='Minimum Version 46' />
         </div>
       </div>
     </section>
