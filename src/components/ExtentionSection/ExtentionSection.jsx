@@ -1,3 +1,5 @@
+import ExtentionBox from "./components/ExtentionBox";
+
 function ExtentionSection() {
   return (
     <section className="mt-20">
@@ -13,7 +15,7 @@ function ExtentionSection() {
 
         {/* content */}
         <div>
-            
+            <ExtentionBox />
         </div>
       </div>
     </section>
