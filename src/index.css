@@ -63,3 +63,8 @@
   .bg-section{
     @apply hidden absolute bg-softBlue h-72 -z-10 lg:block
   }
+
+  .bg-dots{
+    background-image: url(/images/bg-dots.svg);
+    background-repeat: repeat-x;
+  }
