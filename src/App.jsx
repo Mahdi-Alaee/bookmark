@@ -1,4 +1,5 @@
 import ExtentionSection from "./components/ExtentionSection/ExtentionSection";
+import FAQSection from "./components/FAQSection/FAQSection";
 import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
 import HeroSection from "./components/HeroSection";
 import Header from "./components/header";
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <FeaturesSection />
       <ExtentionSection />
+      <FAQSection />
 
 
       
