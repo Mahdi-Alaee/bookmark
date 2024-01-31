@@ -1,3 +1,5 @@
+import FAQItem from "./FAQItem/FAQItem";
+
 function FAQSection() {
   return (
     <section className="mt-32">
@@ -13,7 +15,7 @@ function FAQSection() {
 
         {/* content */}
         <div>
-            
+            <FAQItem />
         </div>
       </div>
     </section>
