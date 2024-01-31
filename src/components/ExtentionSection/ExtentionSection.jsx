@@ -5,10 +5,10 @@ function ExtentionSection() {
     <section className="mt-32">
       <div className="container mx-auto px-6 text-center">
         {/* title */}
-        <h2 className="text-3xl font-bold mb-6 tracking-wide">Download the extension</h2>
+        <h2 className="text-3xl font-bold mb-6 tracking-wide md:text-4xl">Download the extension</h2>
 
         {/* description */}
-        <p className="text-grayishBlue mb-32 max-w-md mx-auto">
+        <p className="text-grayishBlue mb-40 max-w-md mx-auto">
           We've got more browsers in the pipeline. Please do let us know if
           you've got a favourite you'd like us to prioritize.
         </p>

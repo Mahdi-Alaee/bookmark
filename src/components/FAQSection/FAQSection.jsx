@@ -5,7 +5,7 @@ function FAQSection() {
     <section className="mt-32">
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* title */}
-        <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
 
         {/* description */}
         <p className="max-w-md mx-auto mt-6">
@@ -14,7 +14,7 @@ function FAQSection() {
         </p>
 
         {/* content */}
-        <div className="mt-10">
+        <div className="mt-10 px-6">
           <FAQItem
             title="What is Bookmark?"
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, 

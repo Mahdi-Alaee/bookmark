@@ -1,6 +1,6 @@
 function HeroSection() {
   return (
-    <section className="mt-16 lg:mt-32 relative">
+    <section className="mt-16 lg:mt-24 relative">
       {/* container */}
       <div className="container mx-auto px-6 flex flex-col-reverse md:items-center lg:flex-row lg:justify-between">
         {/* content */}

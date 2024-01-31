@@ -12,7 +12,7 @@ function FeaturesSection() {
   };
 
   return (
-    <section className="mt-20 relative min-h-[45rem]">
+    <section className="mt-20 relative min-h-[48rem]">
       {/* container */}
       <div className="container mx-auto px-6 text-center">
         {/* title */}

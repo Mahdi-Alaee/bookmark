@@ -3,7 +3,7 @@ function Feature({ title, description, image }) {
     <div className="flex flex-col gap-y-28 max-w-6xl mx-auto md:flex-row md:gap-x-6 md:justify-between">
       {/* banner */}
       <img
-        className="max-w-md md:w-1/2"
+        className="max-w-lg md:w-1/2"
         src={`/images/${image}`}
         alt="feature image"
       />
