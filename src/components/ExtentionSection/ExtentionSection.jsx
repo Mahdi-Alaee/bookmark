@@ -3,7 +3,7 @@ import ExtentionBox from "./components/ExtentionBox";
 function ExtentionSection() {
   return (
     <section className="mt-32">
-      <div className="container mx-auto px-6 text-center">
+      <div id="download" className="container mx-auto px-6 text-center">
         {/* title */}
         <h2 className="text-3xl font-bold mb-6 tracking-wide md:text-4xl">Download the extension</h2>
 

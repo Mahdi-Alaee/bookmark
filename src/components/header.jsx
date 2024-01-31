@@ -37,7 +37,7 @@ function Header() {
           <li>
             <a
               className="text-grayishBlue tracking-widest hover:text-softRed"
-              href="#"
+              href="#features"
             >
               FEATURES
             </a>
@@ -47,7 +47,7 @@ function Header() {
           <li>
             <a
               className="text-grayishBlue tracking-widest hover:text-softRed"
-              href="#"
+              href="#download"
             >
               DOWNLOAD
             </a>
@@ -57,7 +57,7 @@ function Header() {
           <li>
             <a
               className="text-grayishBlue tracking-widest hover:text-softRed"
-              href="#"
+              href="#faq"
             >
               FAQ
             </a>
@@ -90,7 +90,7 @@ function Header() {
           <div className="bottom-line"></div>
         </button>
       </div>
-      <MobileMenu isActive={isMenuOpen} />
+      <MobileMenu isActive={isMenuOpen} setIsActive={setIsMenuOpen} />
     </header>
   );
 }

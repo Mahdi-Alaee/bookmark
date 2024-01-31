@@ -10,7 +10,7 @@ function FAQItem({ title, content }) {
 
         {/* icon */}
         <svg
-          className="duration-500 group-focus:rotate-180 text-gray-500 group-focus:text-softRed"
+          className="duration-500 group-focus:-rotate-180 text-gray-500 group-focus:text-softRed"
           xmlns="http://www.w3.org/2000/svg"
           width="18"
           height="12"

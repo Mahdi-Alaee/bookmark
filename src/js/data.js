@@ -1,3 +1,10 @@
+const headerMenus = [
+  {id: 1, title: 'FEATURES', href: '#features'},
+  {id: 2, title: 'DOWNLOAD', href: '#download'},
+  {id: 3, title: 'FAQ', href: '#faq'},
+  {id: 4, title: 'Login', href: '#'},
+]
+
 const features = [
   {
     id: 1,
@@ -37,4 +44,4 @@ const featuresMenus = [
   },
 ];
 
-export { features, featuresMenus };
+export { features, featuresMenus, headerMenus };

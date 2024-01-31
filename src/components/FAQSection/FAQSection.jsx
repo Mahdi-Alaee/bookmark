@@ -2,7 +2,7 @@ import FAQItem from "./FAQItem/FAQItem";
 
 function FAQSection() {
   return (
-    <section className="mt-32">
+    <section id="faq" className="mt-32">
       <div className="max-w-3xl mx-auto text-center px-6">
         {/* title */}
         <h2 className="text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
