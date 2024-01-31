@@ -1,13 +1,20 @@
-function FAQItem() {
+function FAQItem({ title, content }) {
   return (
-    <button>
+    <button className="group border-b py-4">
       {/* top */}
-      <div>
+      <div className="flex justify-between">
         {/* title */}
-        <h6>What is Bookmark?</h6>
+        <h6 className="text-gray-500 duration-500 group-hover:text-softRed">
+          {title}
+        </h6>
 
         {/* icon */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+        <svg
+          className="duration-500 group-focus:rotate-180 text-gray-500 group-focus:text-softRed"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="12"
+        >
           <path
             fill="none"
             stroke="currentColor"
@@ -18,11 +25,8 @@ function FAQItem() {
       </div>
 
       {/* content */}
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-        repellat amet doloribus consequuntur eos similique provident tempora
-        voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae
-        delectus id suscipit labore?
+      <p className="text-left text-grayishBlue max-h-0 overflow-hidden group-focus:max-h-none group-focus:pt-6">
+        {content}
       </p>
     </button>
   );

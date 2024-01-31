@@ -3,19 +3,49 @@ import FAQItem from "./FAQItem/FAQItem";
 function FAQSection() {
   return (
     <section className="mt-32">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto text-center px-6">
         {/* title */}
-        <h2>Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
 
         {/* description */}
-        <p>
+        <p className="max-w-md mx-auto mt-6">
           Here are some of our FAQs. If you have any other questions you'd like
           answered please feel free to email us.
         </p>
 
         {/* content */}
-        <div>
-            <FAQItem />
+        <div className="mt-10">
+          <FAQItem
+            title="What is Bookmark?"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, 
+            repellat amet doloribus consequuntur eos similique provident tempora voluptates 
+            iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit 
+            labore?"
+          />
+
+          <FAQItem
+            title="How can I request a new browser?"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, 
+            repellat amet doloribus consequuntur eos similique provident tempora voluptates 
+            iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit 
+            labore?"
+          />
+
+          <FAQItem
+            title="Is ther a mobile app?"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, 
+            repellat amet doloribus consequuntur eos similique provident tempora voluptates 
+            iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit 
+            labore?"
+          />
+
+          <FAQItem
+            title="What about other Chromium browsers"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, 
+            repellat amet doloribus consequuntur eos similique provident tempora voluptates 
+            iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit 
+            labore?"
+          />
         </div>
       </div>
     </section>
