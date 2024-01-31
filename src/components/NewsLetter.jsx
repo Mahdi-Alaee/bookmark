@@ -1,20 +1,20 @@
 function NewsLetter() {
   return (
-    <section>
+    <section className="bg-softBlue py-24 mt-32">
       {/* container */}
-      <div>
+      <div className="max-w-md mx-auto text-white text-center flex flex-col gap-y-6">
         {/* top small text */}
-        <p>35,000+ ALREADY JOINED</p>
+        <p className="text-lg tracking-widest">35,000+ ALREADY JOINED</p>
 
         {/* title */}
-        <h6>Stay up-to-date with what we're doing</h6>
+        <h2 className="text-3xl font-bold tracking-wide">Stay up-to-date with what we're doing</h2>
 
         {/* form */}
-        <form>
+        <form className="flex flex-col items-center gap-y-4">
           {/* textbox */}
-          <input type="text" placeholder="Enter your email address" />
+          <input className="px-6 py-2 rounded-lg outline-none" type="text" placeholder="Enter your email address" />
           {/* submit button */}
-          <button type="submit">Contact Us</button>
+          <button className="bg-softRed text-white px-7 py-3 rounded-lg font-bold" type="submit">Contact Us</button>
         </form>
       </div>
     </section>
